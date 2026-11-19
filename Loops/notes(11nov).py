@@ -103,6 +103,17 @@
 # print(factorials_of_values)
 
 
+# num = int(input("Enter a number: "))
+
+# fact = 1
+# i = 1
+
+# while i <= num:
+#     fact = fact * i
+#     i += 1
+
+# print("Factorial:", fact)
+
 
 
 #reversal of a number:
@@ -117,6 +128,39 @@
 
 '''homework'''
 #reversal using while:
+
+
+# num = int(input("Enter a number: "))
+# rev = 0
+
+# while num > 0:
+#     digit = num % 10
+#     rev = rev * 10 + digit
+#     num = num // 10
+
+# print("Reversed number:", rev)
+
+
+
+
+#Palindronme
+
+# num = int(input("Enter a number: "))
+
+# temp = num
+# rev = 0
+
+# while num > 0:
+#     digit = num % 10
+#     rev = rev * 10 + digit
+#     num = num // 10
+
+# if temp == rev:
+#     print("Palindrome")
+# else:
+#     print("Not a palindrome")
+
+
 
 
 
@@ -138,20 +182,31 @@
 
 #prime number:
 
-n = int(input())
+# n = int(input())
 
-if n <= 1:
-    print("not a prime")
+# if n <= 1:
+#     print("not a prime")
 
-for i in range(2,n):
-    if n % i == 0:
-        print("not a prime")
+# for i in range(2,n):
+#     if n % i == 0:
+#         print("not a prime")
+#         break
+#     else:
+#         print("prime")
+#         break
+
+
+
+
+
+total = 0
+
+while True:
+    num = int(input("Enter a number: "))
+
+    if num == 0:
         break
-    else:
-        print("prime")
-        break
 
+    total = total + num
 
-
-
-
+print("Sum of numbers:", total)
